@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 420px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 12px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="" method="POST">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
+            
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required placeholder="Masukkan alamat Anda"></textarea>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+            
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required placeholder="Masukkan nomor telepon Anda">
+            
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
